@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF8E6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .booking-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #D6CFB4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #4a2d3b;
+    margin-bottom: 20px;
+  }
+
+  fieldset {
+    border: 2px solid #8D0B41;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  legend {
+    font-weight: bold;
+    color: #8D0B41;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4a2d3b;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  input[type="file"],
+  textarea,
+  select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D6CFB4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .btn {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #8D0B41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .btn:hover {
+    background-color: #4a2d3b;
+    transform: scale(1.05);
+  }
+
+  .btn:active {
+    transform: scale(1);
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #8D0B41;
+    box-shadow: 0 0 8px rgba(141, 11, 65, 0.5);
+  }
+
+  fieldset:hover {
+    box-shadow: 0 0 10px rgba(141, 11, 65, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .booking-container {
+      padding: 10px;
+    }
+  }

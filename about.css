@@ -1,0 +1,171 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #D6CFB4;
+    color: #4a2d3b;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #8D0B41;
+    color: #FFF8E6;
+    text-align: center;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+header:hover {
+    background-color: #7A0835;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    /* text-decoration: underline; */
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #555;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #4a2d3b;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #FFF8E6;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: center;
+}
+
+.content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+section {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+ul, ol {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    justify-content: center;
+    text-align: center;
+
+}
+
+li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+blockquote {
+    background: #f0f0f0;
+    border-left: 5px solid #8D0B41;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    font-style: italic;
+    color: #666;
+}
+
+a {
+    color: #8D0B41;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #7A0835;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.room {
+    padding: 1.5rem;
+    background: #FFF8E6;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.room h3 {
+    margin-bottom: 0.5rem;
+    color: #8D0B41;
+}
+
+.room p {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}

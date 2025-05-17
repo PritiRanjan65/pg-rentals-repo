@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Booking Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Details.css">
+</head>
+<body>
+  <div class="booking-container">
+    <h1>Room Booking Form</h1>
+    <form action="#" method="post" class="booking-form">
+      <fieldset>
+        <legend>Room Details</legend>
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type" required>
+          <option value="single">Single Room</option>
+          <option value="double">Double Room</option>
+          <option value="deluxe">Deluxe Room</option>
+          <option value="suite">Suite Room</option>
+          <option value="penthouse">Penthouse</option>
+          <option value="villa">Villa</option>
+          <option value="budget">Budget Room</option>
+          <option value="executive">Executive Room</option>
+          <option value="family">Family Room</option>
+          <option value="studio">Studio Room</option>
+          <option value="premium">Premium Room</option>
+          <option value="garden-suite">Garden Suite</option>
+        </select>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required />
+
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" required />
+
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="adhaar">Adhaar Number:</label>
+        <input type="text" id="adhaar" name="adhaar" required />
+
+        <label for="adhaar-upload">Upload Adhaar:</label>
+        <input type="file" id="adhaar-upload" name="adhaar-upload" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Guests (if applicable)</legend>
+        <label for="guest-info">Enter Guest Details:</label>
+        <textarea id="guest-info" name="guest-info" rows="4" placeholder="Enter name, age, and contact details for each additional guest"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Special Requests</legend>
+        <textarea id="requests" name="requests" rows="4" placeholder="Any special requests or preferences"></textarea>
+      </fieldset>
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+  </div>
+</body>
+</html>
